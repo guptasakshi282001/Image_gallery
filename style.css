@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-top: 4.5%;
+    width: 100%;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image{
+    
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .gallery .image img{
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+
+
+.gallery .image:hover img{
+    transform: scale(1.1);
+}
+
+.pop-up{
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background-color: #808080a1;
+    display: none;
+}
+
+.pop-up span{
+    position: absolute;
+    top: 70px; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.pop-up img{
+    position: absolute;
+    top: 50%; left: 54%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pop-up .nav-btns {
+    position: absolute;
+    top: 30%;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop-up .nav-btns span {
+    font-size: 5rem;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 30%;
+}
+  
+.pop-up .nav-btns span:hover {
+    color: gray;
+}
+
+.prev-btn{
+    left: 2%;
+}
+
+/*for responsive*/
+
+@media (min-width:2560px){
+    .image img{
+        width: 500px;
+        height: 400px;
+    }
+    
+}
+
+@media (max-width:1440px){
+    .image img{
+        width: 280px;
+        height: 230px;
+    }
+    
+}
+
+@media (max-width:1024px){
+    .image img{
+        width: 200px;
+        height: 190px;
+    }
+    
+}
+
+@media (max-width:768px){
+    .image img{
+        width: 150px;
+        height: 110px;;
+    }
+    
+    .pop-up img{
+        width: 200px;
+        height: 186px;
+        top: 40%;
+        margin-left: -3%;
+    }
+    .pop-up .nav-btns span{
+        top: 1%;
+    }
+}
+
+@media (max-width:426px){
+    .image img{
+        width: 138px;
+        height: 140px;
+    }
+    
+    .pop-up .nav-btns span{
+        font-size: 3rem;
+        font-size: 3rem;
+        margin-left: 5%;
+    }
+    .pop-up .nav-btns {
+        margin-left: 1%;
+    }
+}
+
+@media (max-width:376px){
+    .image img{
+        width: 121px;
+        height: 115px;
+    }
+    
+    .pop-up .nav-btns span{
+        margin-left: 4%;
+    }
+}
+
+@media (max-width:321px){
+    .image img{
+        width:158px ;  
+    }
+
+    .pop-up .nav-btns{
+        margin-left: 6%;
+    }
+    .pop-up .nav-btns span{
+        margin-left: -3%;
+    }
+}
