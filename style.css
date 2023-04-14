@@ -15,7 +15,7 @@
 }
 
 .image{
-    opacity: 0.5;
+    
     overflow: hidden;
     cursor: pointer;
 }
@@ -25,9 +25,7 @@
     transition: .2s linear;
 }
 
-.image:hover{
-    opacity: 2;
-}
+
 
 .gallery .image:hover img{
     transform: scale(1.1);
@@ -39,8 +37,8 @@
     height: 100%;
     width: 100%;
     z-index: 100;
+    background-color: #808080a1;
     display: none;
-    
 }
 
 .pop-up span{
@@ -75,7 +73,7 @@
 
 .pop-up .nav-btns span {
     font-size: 5rem;
-    color: black;
+    color: white;
     cursor: pointer;
     margin: 20px;
     margin-left: 30%;
@@ -96,9 +94,7 @@
         width: 500px;
         height: 400px;
     }
-    .image:hover{
-        opacity: 2;
-    }
+    
 }
 
 @media (max-width:1440px){
@@ -106,9 +102,7 @@
         width: 280px;
         height: 230px;
     }
-    .image:hover{
-        opacity: 2;
-    }
+    
 }
 
 @media (max-width:1024px){
@@ -116,9 +110,7 @@
         width: 200px;
         height: 190px;
     }
-    .image:hover{
-        opacity: 2;
-    }
+    
 }
 
 @media (max-width:768px){
@@ -126,9 +118,7 @@
         width: 150px;
         height: 110px;;
     }
-    .image:hover{
-        opacity: 2;
-    }
+    
     .pop-up img{
         width: 200px;
         height: 186px;
@@ -145,9 +135,7 @@
         width: 138px;
         height: 140px;
     }
-    .image:hover{
-        opacity: 2;
-    }
+    
     .pop-up .nav-btns span{
         font-size: 3rem;
         font-size: 3rem;
@@ -163,9 +151,7 @@
         width: 121px;
         height: 115px;
     }
-    .image:hover{
-        opacity: 2;
-    }
+    
     .pop-up .nav-btns span{
         margin-left: 4%;
     }
@@ -175,9 +161,7 @@
     .image img{
         width:158px ;  
     }
-    .image:hover{
-        opacity: 2;
-    }
+
     .pop-up .nav-btns{
         margin-left: 6%;
     }
